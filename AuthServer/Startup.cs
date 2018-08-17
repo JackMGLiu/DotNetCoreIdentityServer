@@ -22,6 +22,7 @@ namespace AuthServer
             //3.指定可以使用authorization server授权的用户.
             services.AddIdentityServer()
                 .AddDeveloperSigningCredential()
+                .AddInMemoryIdentityResources(IdentityServerConfig.GetIdentityResources())
                 .AddInMemoryApiResources(IdentityServerConfig.ApiResources())
                 .AddInMemoryClients(IdentityServerConfig.Clients())
                 .AddTestUsers(IdentityServerConfig.Users().ToList());
