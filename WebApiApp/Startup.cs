@@ -24,10 +24,13 @@ namespace WebApiApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc();
+
             //IdentityServer4.AccessTokenValidation配置
             services.AddMvcCore()
                 .AddAuthorization()
                 .AddJsonFormatters();
+
 
             //这里AddAuthentication()是把验证服务注册到DI, 并配置了Bearer作为默认模式.
             //AddIdentityServerAuthentication()是在DI注册了token验证的处理者.
@@ -36,11 +39,13 @@ namespace WebApiApp
             //ApiName要和Authorization Server里面配置ApiResource的name一样.
             //然后, 在Startup的Configure方法里配置Authentication中间件.
             services.AddAuthentication("Bearer")
-                .AddIdentityServerAuthentication(options => {
+                .AddIdentityServerAuthentication(options =>
+                {
                     options.RequireHttpsMetadata = false;
-                    options.Authority = "http://localhost：5000/";
+                    options.Authority = "http://localhost:5000/";
                     options.ApiName = "demonetwork1";
                 });
+
 
             //注册 Swagger
             services.AddSwaggerGen(c =>
@@ -56,6 +61,7 @@ namespace WebApiApp
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseAuthentication();
 
             // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();
@@ -66,7 +72,7 @@ namespace WebApiApp
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebApiApp");
             });
 
-            app.UseAuthentication();
+
 
             app.UseMvc();
         }

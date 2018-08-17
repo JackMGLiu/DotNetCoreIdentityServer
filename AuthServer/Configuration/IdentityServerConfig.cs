@@ -34,7 +34,7 @@ namespace AuthServer.Configuration
                 new Client
                 {
                     ClientId = "democlient1",
-                    ClientSecrets = new [] { new Secret("secret".Sha256()) },
+                    ClientSecrets = new [] { new Secret("mysecret123qweASD".Sha256()) },
                     AllowedGrantTypes = GrantTypes.ResourceOwnerPasswordAndClientCredentials,
                     AllowedScopes = new [] { "demonetwork1" }
                 }
