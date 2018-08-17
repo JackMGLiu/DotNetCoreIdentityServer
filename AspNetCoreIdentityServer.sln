@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthServer", "AuthServer\Au
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiApp", "WebApiApp\WebApiApp.csproj", "{746E453A-A37E-4416-86FA-0AEC605FDC72}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMvcApp", "WebMvcApp\WebMvcApp.csproj", "{A3C381BB-ED69-4030-8519-5E6044337561}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{746E453A-A37E-4416-86FA-0AEC605FDC72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{746E453A-A37E-4416-86FA-0AEC605FDC72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{746E453A-A37E-4416-86FA-0AEC605FDC72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3C381BB-ED69-4030-8519-5E6044337561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3C381BB-ED69-4030-8519-5E6044337561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3C381BB-ED69-4030-8519-5E6044337561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3C381BB-ED69-4030-8519-5E6044337561}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
