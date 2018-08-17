@@ -65,6 +65,7 @@ namespace WebMvcApp
                 options.RequireHttpsMetadata = false;
 
                 options.ClientId = "mvc_implicit";
+                options.ResponseType = "id_token token";  //返回类型
                 options.SaveTokens = true;
             });
         }
