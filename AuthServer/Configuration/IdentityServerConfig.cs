@@ -4,6 +4,7 @@ using IdentityServer4.Test;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace AuthServer.Configuration
@@ -19,6 +20,7 @@ namespace AuthServer.Configuration
             {
                 new IdentityResources.OpenId(),
                 new IdentityResources.Profile(),
+                new IdentityResources.Email()
             };
         }
 
@@ -100,7 +102,8 @@ namespace AuthServer.Configuration
                 {
                     SubjectId = "1",
                     Username = "testuser1@qq.com",
-                    Password = "123qweA"
+                    Password = "123qweA",
+                    Claims = new [] { new Claim("email", "test1@qq.com") }
                 }
             };
         }

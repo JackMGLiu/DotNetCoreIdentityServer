@@ -42,6 +42,7 @@ namespace WebMvcAppForHybird
                 options.ResponseType = "id_token code";  //返回类型 code, 这意味着使用的是Authorization Code flow.
                 options.Scope.Add("demonetwork1");
                 options.Scope.Add("offline_access"); //api离线访问
+                options.Scope.Add("email");  //
                 options.SaveTokens = true;
                 options.GetClaimsFromUserInfoEndpoint = true; //从UserInfo节点获取用户的Claims
             });
