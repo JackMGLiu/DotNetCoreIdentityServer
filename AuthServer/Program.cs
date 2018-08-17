@@ -18,10 +18,9 @@ namespace AuthServer
         }
 
         public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseKestrel()
-                .UseUrls("http://*.5000")
+            WebHost.CreateDefaultBuilder(args)          
                 .UseStartup<Startup>()
+                .UseUrls("http://*:5000")
                 .Build();
     }
 }
