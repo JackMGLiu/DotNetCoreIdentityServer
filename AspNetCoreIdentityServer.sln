@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthServer", "AuthServer\AuthServer.csproj", "{7DE55717-DCD8-4041-BF86-B3B8B1E0ADAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthServer", "AuthServer\AuthServer.csproj", "{7DE55717-DCD8-4041-BF86-B3B8B1E0ADAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiApp", "WebApiApp\WebApiApp.csproj", "{746E453A-A37E-4416-86FA-0AEC605FDC72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiApp", "WebApiApp\WebApiApp.csproj", "{746E453A-A37E-4416-86FA-0AEC605FDC72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMvcApp", "WebMvcApp\WebMvcApp.csproj", "{A3C381BB-ED69-4030-8519-5E6044337561}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebMvcApp", "WebMvcApp\WebMvcApp.csproj", "{A3C381BB-ED69-4030-8519-5E6044337561}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMvcAppForHybird", "WebMvcAppForHybird\WebMvcAppForHybird.csproj", "{835E22AA-A16F-4C18-923E-CF25F2C684E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebMvcAppForHybird", "WebMvcAppForHybird\WebMvcAppForHybird.csproj", "{835E22AA-A16F-4C18-923E-CF25F2C684E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppForIdentity", "WebAppForIdentity\WebAppForIdentity.csproj", "{E2AA6853-123B-4662-A51D-5949E91B294B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppForIdentity", "WebAppForIdentity\WebAppForIdentity.csproj", "{E2AA6853-123B-4662-A51D-5949E91B294B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SSO", "SSO", "{D4368BC0-6F40-445E-8715-D98AADBD2809}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
