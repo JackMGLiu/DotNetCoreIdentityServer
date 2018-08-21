@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SSO", "SSO", "{D4368BC0-6F4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity4SSO", "Identity4SSO\Identity4SSO.csproj", "{235D6B38-4404-452F-B7C8-52C33ED0CDFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity4SSOSiteA", "Identity4SSOSiteA\Identity4SSOSiteA.csproj", "{88AF49F5-0048-4EE0-A008-5D42009958B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,12 +49,17 @@ Global
 		{235D6B38-4404-452F-B7C8-52C33ED0CDFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{235D6B38-4404-452F-B7C8-52C33ED0CDFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{235D6B38-4404-452F-B7C8-52C33ED0CDFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88AF49F5-0048-4EE0-A008-5D42009958B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88AF49F5-0048-4EE0-A008-5D42009958B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88AF49F5-0048-4EE0-A008-5D42009958B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88AF49F5-0048-4EE0-A008-5D42009958B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{235D6B38-4404-452F-B7C8-52C33ED0CDFF} = {D4368BC0-6F40-445E-8715-D98AADBD2809}
+		{88AF49F5-0048-4EE0-A008-5D42009958B1} = {D4368BC0-6F40-445E-8715-D98AADBD2809}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {12A65471-708D-45CE-8B50-E182047AB3EA}
