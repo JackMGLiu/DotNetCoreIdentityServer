@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Identity4SSO.Models;
+using Identity4SSO.Models.Service;
+using Identity4SSO.Models.Service.Impl;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -31,6 +33,8 @@ namespace Identity4SSO
                 .AddDeveloperSigningCredential()
                 .AddInMemoryIdentityResources(Config.GetIdentityResources())
                 .AddInMemoryClients(Config.GetClients());//把配置文件的Client配置资源放到内存
+
+            services.AddTransient<IAdminService, AdminService>();//service注入
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
